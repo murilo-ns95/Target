@@ -1,0 +1,42 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      double sp = 67836.43;
+      double rj = 36678.66;
+      double mg = 29229.88;
+      double es = 27165.48;
+      double outros = 19849.53;
+      double total = sp+rj+mg+es+outros;
+      System.out.println("Digite o estado a ser analisado (sp = 1, rj = 2, mg = 3, es = 4, outros = 5:");
+      int estado = sc.nextInt();
+      double porcento = 0;
+      switch (estado){
+          case 1:
+              porcento = (100*sp)/total;
+              System.out.println("a porcentagem referente a sp eh: "+ porcento);
+              break;
+          case 2:
+              porcento = (100*rj)/total;
+              System.out.println("a porcentagem referente ao rj eh: "+ porcento);
+              break;
+          case 3:
+              porcento = (100*mg)/total;
+              System.out.println("a porcentagem referente a mg eh: "+ porcento);
+              break;
+          case 4:
+              porcento = (100*es)/total;
+              System.out.println("a porcentagem referente ao es eh: "+ porcento);
+              break;
+          case 5:
+              porcento = (100*outros)/total;
+              System.out.println("a porcentagem referente ao restante eh: "+ porcento);
+              break;
+      }
+      
+      
+      
+  }
+}
