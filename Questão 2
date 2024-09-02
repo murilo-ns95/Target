@@ -1,0 +1,25 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int n1 = 0;
+      int n2 = 1;
+      int n3 = 0;
+      System.out.println("Digite o numero a ser analisado:");
+      int f = sc.nextInt();
+      while (f>n3){
+          n3 = n1+n2;
+          n1 = n2;
+          n2 = n3;
+      }
+      if (f == 0){
+          System.out.println("o numero 0 pertence a sequencia!");
+      }else if (f==n3){
+          System.out.println("o numero "+f+" pertence a sequencia");
+      }else{
+          System.out.println("o numero "+f+" NAO pertence a sequencia");
+      }
+  }
+}
